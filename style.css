@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+    }
+    html {
+        scroll-behavior: smooth;
+        font-size: 80%;
+    }
+    
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+background-color: #696969; 
+    color: white;
+}
+
+header {
+    margin-left: auto; 
+    padding: 1.5rem 8%; 
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 100%; 
+    z-index: 100;
+}
+
+
+nav a{
+    font-size: 1.8rem;
+    color: rgb(100, 64, 146);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px red(25, 15, 96);
+
+}
+
+nav a:hover,
+nav a.active{
+    color: white    ;
+    border-bottom: 3px solid white;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-image: url('/Gogh.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    position: relative;
+    padding: 5rem 0;
+    color: white;
+}
+
+.Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.Home-content, .Home-img {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.Home-content {
+    max-width: 600px; 
+    text-align: center; 
+    padding: 2rem; 
+    background-color: rgba(144, 238, 144, 0.3); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+
+.Home-content h1 {
+    font-size: 2rem; 
+    font-weight: 700;
+    line-height: 1.2; 
+    margin-bottom: 1rem; 
+    color: black; 
+}
+
+.Home-content h3{
+    font-size: 3.5rem; 
+    margin-bottom: 1.5rem; 
+    font-weight: 600;
+    color: black; 
+}
+
+.Home-content p {
+    font-size: 1.5rem; 
+    line-height: 1.6; 
+    color: black; 
+    margin-top: 1rem; 
+}
+  
+.Home-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.Home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.resume-button {
+    display: inline-block;
+    margin-top: 1rem; 
+    padding: 0.75rem 1.5rem; 
+    background-color: rgb(100, 64, 146); 
+    color: white; 
+    font-size: 1.2rem;
+    border-radius: 5px; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #D44638;
+    transform: scale(1.05); 
+}
+
+
+.About {
+    background-color:black;
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 6rem 2rem;
+    gap: 2rem; 
+}
+
+.About-img {
+    flex: 1; 
+    text-align: left; 
+}
+
+.About-content {
+    flex: 1; 
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.text-box {
+    background-color: white; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: black; 
+}
+
+.About-img img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.About-content h2 {
+    padding: 1rem;                  
+    border: 2px solid white;        
+    background-color: gray;  
+    border-radius: 10px;           
+    text-align: center;             
+    max-width: 300px;              
+    margin: 20px auto;              
+    color: white;                 
+    font-size: 1.8rem;              
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.icon.fb:hover {
+    color: #1877f2; 
+}
+
+.icon.ig:hover {
+    color: #E4405F; 
+}
+
+.icon.gmail:hover {
+    color: #D44638;
+}
+
+
+.Experience {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    padding: 50px; 
+    color: white;
+    background-image: url('clouds.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    padding: 50px; 
+    color: white; 
+}
+
+.project-container {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    width: 300px;
+}
+.project-box h3 {
+    font-size: 1.8rem;
+    color: #FFD700; 
+}
+
+.project-link {
+    color: #D44638;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #FF6347; 
+}
+
+
+.projects-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap; 
+}
+
+.project-card {
+    background-color: rgba(144, 238, 144, 0.2);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(144, 238, 144, 0.4); 
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Contact {
+    background-color: #282c34;
+    color: white; 
+    padding: 5rem 9%; 
+    text-align: center; 
+}
+
+.Contact h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+}
+
+.Contact p {
+    font-size: 1.2rem; 
+    margin-bottom: 3rem; 
+}
+
+.contact-methods {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem; 
+}
+
+.contact-item {
+    background-color: rgba(144, 238, 144, 0.2); 
+    border-radius: 10px; 
+    padding: 2rem;
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem; 
+    color: whitesmoke; 
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+    color:white 
+    text-decoration none; 
+    transition:color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: white; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .Home-img img {
+        width: 80vw;
+    }
+    
+}
